@@ -1,0 +1,4 @@
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_PRESENT}=="0", RUN+="/usr/local/bin/pinephone_charging_indicator"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_PRESENT}=="1", RUN+="/usr/local/bin/pinephone_charging_indicator"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_CAPACITY}=="50", RUN+="/usr/local/bin/pinephone_charging_indicator"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_CAPACITY}=="90", RUN+="/usr/local/bin/pinephone_charging_indicator"
